@@ -71,12 +71,14 @@
         <ImageButton
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:src="@drawable/search_icon"
             android:backgroundTint="@color/white"
+            android:minHeight="48dp"
+            android:src="@drawable/search_icon"
             app:layout_constraintBottom_toBottomOf="@id/mainActivitySearchView"
             app:layout_constraintStart_toStartOf="@id/mainActivitySearchView"
             app:layout_constraintTop_toBottomOf="parent"
-            app:layout_constraintTop_toTopOf="@id/mainActivitySearchView"></ImageButton>
+            app:layout_constraintTop_toTopOf="@id/mainActivitySearchView"
+            tools:ignore="SpeakableTextPresentCheck"></ImageButton>
 
         <ImageButton
             android:id="@+id/mainActivitySearchView"
@@ -89,7 +91,8 @@
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
+            app:layout_constraintTop_toTopOf="parent"
+            tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
     </androidx.constraintlayout.widget.ConstraintLayout>
 
     <!-- BANNER VIEW -->
@@ -106,7 +109,8 @@
         android:background="@drawable/banner_background"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/mainSearchViewDiv">
+        app:layout_constraintTop_toBottomOf="@id/mainSearchViewDiv"
+        tools:ignore="TextSizeCheck">
 
         <TextView
             android:layout_width="wrap_content"
