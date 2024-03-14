@@ -1,6 +1,7 @@
 package com.example.javamobileapplicationtest;
 
 import android.os.Bundle;
+import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.Fragment;
@@ -27,7 +28,8 @@ public class MainActivity extends AppCompatActivity {
             } else if (itemId == R.id.bookmark) {
                 replaceFragment(new BookmarkedFragment());
             } else if (itemId == R.id.profile) {
-                replaceFragment(new ProfileFragment());
+                Toast toast = Toast.makeText(this, "This feature has not yet been added!", Toast.LENGTH_SHORT);
+                toast.show();
             }
             return true;
         });
