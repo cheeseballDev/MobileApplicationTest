@@ -34,6 +34,7 @@
             android:background="#FFFFFF"
             android:contentDescription="CART"
             android:src="@drawable/in_cart_icon"
+            android:onClick="cartBtnClick"
             app:itemIconTint="@color/pale_dogwood"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
@@ -78,7 +79,8 @@
             app:layout_constraintStart_toStartOf="@id/mainActivitySearchView"
             app:layout_constraintTop_toBottomOf="parent"
             app:layout_constraintTop_toTopOf="@id/mainActivitySearchView"
-            tools:ignore="SpeakableTextPresentCheck"></ImageButton>
+            tools:ignore="SpeakableTextPresentCheck">
+        </ImageButton>
 
         <ImageButton
             android:id="@+id/mainActivitySearchView"
@@ -88,6 +90,7 @@
             android:layout_marginTop="12dp"
             android:layout_marginEnd="12dp"
             android:background="@drawable/search_button_design"
+            android:onClick="searchBtnClick"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
@@ -184,6 +187,7 @@
                 android:layout_height="wrap_content"
                 android:background="@drawable/category_button_style"
                 android:text="ALL"
+                android:onClick="allBtnClick"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent">
 
@@ -196,6 +200,7 @@
                 android:layout_marginStart="12dp"
                 android:background="@drawable/category_button_style"
                 android:text="HANDGUNS"
+                android:onClick="handgunsBtnClick"
                 app:layout_constraintStart_toEndOf="@id/allBtn"
                 app:layout_constraintTop_toTopOf="parent">
 
@@ -208,6 +213,7 @@
                 android:layout_marginStart="12dp"
                 android:background="@drawable/category_button_style"
                 android:text="RIFLES"
+                android:onClick="riflesBtnClick"
                 app:layout_constraintStart_toEndOf="@id/handgunsBtn"
                 app:layout_constraintTop_toTopOf="parent">
 
@@ -220,6 +226,7 @@
                 android:layout_marginStart="12dp"
                 android:background="@drawable/category_button_style"
                 android:text="SHOTGUNS"
+                android:onClick="shotgunsBtnClick"
                 app:layout_constraintStart_toEndOf="@id/riflesBtn"
                 app:layout_constraintTop_toTopOf="parent">
 
@@ -241,7 +248,6 @@
     </HorizontalScrollView>
 
     <androidx.constraintlayout.widget.ConstraintLayout
-
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="12dp"
@@ -252,6 +258,7 @@
         <androidx.recyclerview.widget.RecyclerView
             android:layout_width="match_parent"
             android:layout_height="match_parent"
+
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"

@@ -16,7 +16,9 @@ public class Adapter extends BaseAdapter {
     boolean[] addedToCart;
     int[] productimageID;
 
-    public Adapter(Context context, )
+    public Adapter(Context context, int[] productId, String[] productName, String[] productType, int[] productPrice, boolean[] bookmarked, boolean[] addedToCart, int[] productimageID) {
+        
+    }
 
     @Override
     public int getCount() {

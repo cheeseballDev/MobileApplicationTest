@@ -34,4 +34,28 @@ public class HomeFragment extends Fragment {
         view = inflater.inflate(R.layout.fragment_home, container, false);
         return view;
     }
+
+    public void searchBtnClick(View view) {
+
+    }
+
+    public void cartBtnClick(View view) {
+
+    }
+
+    public void allBtnClick(View view) {
+
+    }
+
+    public void handgunsBtnClick(View view) {
+
+    }
+
+    public void riflesBtnClick(View view) {
+
+    }
+
+    public void shotgunsBtnClick(View view) {
+
+    }
 }
